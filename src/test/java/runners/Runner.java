@@ -12,13 +12,11 @@ import org.junit.runner.RunWith;
         glue = {"steps"}
 )
 public class Runner extends RunnerTests {
-
     @AfterClass
     public static void tierDown() {
 
         driver.close();
 
     }
-
 }
 

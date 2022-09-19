@@ -12,3 +12,4 @@ Funcionalidade: Comprar produto na Amazon
       |"hunter x hunter"|"Hunter X Hunter - Volume 11"| "R$ 23,90"|
       |   "slam dunk"   |      "Slam Dunk Vol. 4"     | "R$ 22,90"|
       |"o menino do pijama listrado"|"O menino do pijama listrado"|"R$ 29,94"|
+      |"clean code"|"Código limpo: Habilidades práticas do Agile Software"|"R$ 70,99"|

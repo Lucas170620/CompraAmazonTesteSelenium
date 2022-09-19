@@ -3,13 +3,12 @@ package steps;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
-import org.junit.Assert;
 import pages.HomePage;
 import pages.Lista;
 import pages.Produto;
 import runners.Runner;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class CompraAmazon extends Runner {
     HomePage home = new HomePage();
@@ -37,4 +36,5 @@ public class CompraAmazon extends Runner {
         assertEquals("Nome Errado",titulo,produto.nomeProduto());
         assertEquals("Preco Invalido",valor,produto.valorProduto());
     }
+
 }

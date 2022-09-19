@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class RunnerTests {
-    static WebDriver driver;
+    public static WebDriver driver;
     public enum Browser {CHROME,FIREFOX};
 
     public static WebDriver getDriver(Browser browser){
@@ -18,6 +18,7 @@ public class RunnerTests {
                 break;
             case FIREFOX:
                 driver = new FirefoxDriver();
+                break;
             default:
                 throw new IllegalArgumentException("Navegador Invalido");
         }
@@ -25,7 +26,7 @@ public class RunnerTests {
     }
     public static WebDriver getDriver(){
         if(driver ==null){
-            return getDriver(Browser.CHROME);
+            return getDriver(Browser.FIREFOX);
         }
         else {
             return driver;
